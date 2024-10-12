@@ -9,5 +9,5 @@ export default function Nav({ articles, setArticle }) {
             </p>
           ))}
     </nav>
-  );
+  )
 }
