@@ -56,9 +56,6 @@ nav {
   font-family: 'Misto';
   font-size: max(2vw, 30px);
   text-align: center;
-
-  display: grid;
-  grid-template-rows: min-content auto;
 }
 
 h2{
