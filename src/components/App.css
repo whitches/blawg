@@ -1,6 +1,10 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
+  background-image: url("https://d2bzx2vuetkzse.cloudfront.net/images_without_background/623494e8-539d-412f-a60d-621055c915d3.png");
+  background-size: 300vh, 100vw;
+  background-position: center;
+  display: grid;
 }
 
 .App {
@@ -35,25 +39,58 @@ form textarea {
 
 nav,
 article {
-  height: 100%;
+  height: 100vh;
   padding: 10px;
+  
 }
 
+@font-face {
+  font-family: 'Misto';
+  src: local('Misto'), url(Misto.ttf) format('ttf');
+  /* other formats include: 'woff2', 'truetype, 'opentype',
+                            'embedded-opentype', and 'svg' */
+}
 nav {
-  background-color: #dee9ff;
+  background-color: #fff5de;
+  width: max(10vw, 150px);
+  font-family: 'Misto';
+  font-size: max(2vw, 30px);
+  text-align: center;
+
+  display: grid;
+  grid-template-rows: min-content auto;
+}
+
+h2{
+  font-size: 75px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-decoration: line-through;
+  text-decoration-color: white;
+  text-decoration-thickness: 10px;
 }
 
 nav p:hover {
   text-decoration: underline;
+  text-decoration-color: rgb(255, 0, 0);
   cursor: pointer;
 }
 
 article .date {
+  background-color: white;
+  font-size: 32px;
+  line-height: 16px;
+  width: 200px;
+  height: 16px;
+  text-align:center;
+  -webkit-filter: invert(100%);
+    filter: invert(100%);
   font-style: italic;
 }
 
 article .body {
   white-space: break-spaces;
+  font-size: 24px;
 }
 
 .error {
